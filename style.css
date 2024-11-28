@@ -1,0 +1,861 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.header{
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    height: 60px;
+    background: #fff;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 20px 40px #d5d3d3;
+}
+
+.header img{
+    margin-left: 40px;
+    width: 100px;
+    height: 60px;
+}
+.header nav {
+    padding: 10px 35px;
+}
+.header nav ul {
+    list-style: none;
+    display: flex;
+    position: relative;
+}
+nav ul li {
+    position: relative;
+    margin-right: 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+nav ul li a:hover {
+    background-color: rgb(234, 141, 6);
+    border-radius: 5px;
+    color: #fff;
+}
+.sub-links {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    color: black;
+    border-radius: 8px;
+    padding: 10px 0;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    z-index: 10;
+}
+.sub-links ul {
+    display: flex;
+    flex-direction: column;
+}
+.sub-links ul li {
+    margin: 0;
+}
+.sub-links ul li a {
+    color: black;
+    padding: 8px 15px;
+    display: block;
+    transition: background-color 0.3s;
+}
+.sub-links ul li a:hover {
+    background-color: rgb(254, 88, 88);
+    color: white;
+}
+
+.sub-link-links:hover .sub-links {
+    display: block;
+}
+
+.social-icons{
+    display: flex;
+    margin: 0 50px;
+}
+.social-icons .fa{
+    margin-right: 8px;
+    margin-top: 20px;
+}
+.social-icons a {
+    color: #000;
+    margin: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.social-icons a:hover {
+    color: rgb(214, 141, 6); 
+}
+.header .phone{
+    margin: 0 100px;
+    margin-top: 10px;
+    color: black;
+}
+.header .phone .phone-number{
+    font-size: 22px;
+    font-weight: 500;
+}
+.header .phone .phone-number:hover{
+    color: rgb(254, 88, 88);
+    cursor: pointer;
+}
+.phone .text{
+    font-size: 10px;
+    margin-left: 30px;
+}
+.phone .text:hover{
+    color: black;
+}
+
+/*--------------------Home Contents---------------------*/
+.section-1{
+    background-image: url(images/ngorongoro.jpg);
+    background-position: re-center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: relative;
+    color: #fff;
+    min-height: 100vh;
+    margin: 60px 10px;
+    z-index: 1;
+}
+.section-1-content {
+    margin: 0 ;
+    z-index: 2;
+}
+@font-face {
+    font-family: NeizonScript;
+    src: url(fonts/NeizonScript.otf);
+}
+.h1{
+    font-family: NeizonScript;
+    font-size: 50px;
+    color: black;
+    margin-left: 50px;
+    position: absolute;
+    top: 30px;
+}
+.section-1-content h2{
+    font-size: 45px;
+    font-weight: 700;
+    margin: 20px 50px 20px 50px;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 100px;
+}
+
+#view-all button{
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    border: 2px solid#fff; 
+    background-color:transparent;
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 15px;
+    position: absolute;
+    top: 250px;
+    left: 40px;
+}
+#book-now button{
+    text-decoration: none; 
+    color: black;
+    padding: 10px 20px;
+    background-color: white;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    cursor: pointer;
+    position: absolute;
+    top: 248px;
+    left: 180px;
+}
+
+#view-all button:hover{
+    color: black;
+    background-color: white;
+}
+
+#book-now button:hover{
+    color: #fff;
+    background-color: rgb(2, 204, 204);
+    border: 1px solid rgb(2, 204, 204);
+}
+.container{
+    position: absolute;
+    display: flex;
+    top: 550px;
+    height: 250px;
+    gap: 20px;
+    left: 40px;
+    z-index: 2;
+}
+.container .slider{
+    border-radius: 10px;
+    border: 10px solid #fff;
+    box-shadow: 0 4px 6px  rgba(78, 77, 77, 0.1);
+    background-color: #fff;
+}
+
+.container .slider img{
+    height: 200px;
+    width: 260px;
+    border-radius: 5px;
+}
+.container .slider p{
+    text-align: center;
+    font-weight: 400;
+    color: black;
+}
+/*--------------------Section-2-------------------*/
+.section-2 {
+    background: #efeeee;
+    min-height: 80vh;
+    position: relative;
+    top: 150px;
+    padding: 20px 0;
+}
+.section-2 h2, .section-2 h3, .section-2 p {
+    text-align: center;
+    margin: 0;
+
+}
+@font-face {
+    font-family: NeizonScript;
+    src: url(fonts/NeizonScript.otf);
+}
+.section-2 h2,
+.section-2 h3,
+.section-2 p {
+    text-align: center;
+}
+.section-2 h2 {
+    color: rgb(214, 141, 6);
+    font-family: NeizonScript;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.section-2 h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.section-2 p {
+    max-width: 80%;
+    margin: 0 auto; 
+    word-spacing: 6px;
+    font-weight: 300;
+    color: #5f5f5f;
+    line-height: 1.8;
+}
+
+/*-----------------Section-3-------------------*/
+
+.section-3 {
+    height: 100vh; 
+    background: #fff;
+    color: black;
+    margin-top: 140px; 
+}
+.section-3 h1 {
+    text-align: center;
+    font-weight: 400; 
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.container-2{
+    display: flex;
+    height: 250px;
+    gap: 10px;
+    margin: 50px 50px;
+}
+.container-2 .icon{
+    border-radius: 10px;
+    border: 1px solid #cbc8c8;
+    background-color: #fff;
+    width: 380px;
+    height: 280px;
+    text-align: center;
+}
+.container-2 .icon img{
+    height: 150px;
+    width: 200px;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.container-2 .icon h1{
+    font-size: 15px;
+    color: rgb(254, 125, 125);
+}
+.container-2 .icon p{
+    text-align: center;
+    font-weight: 400;
+    color: rgb(107, 105, 105);
+    font-size: 15px;
+    max-width: 300px;
+    margin: auto;
+}
+.icons{
+    display: flex;
+    gap: 10px;
+    margin: 50px 50px;
+    text-align: center;
+}
+.memories-icon{
+    border-radius: 10px;
+    border: 1px solid #cbc8c8;
+    background-color: #fff;   
+    width: 380px;
+    height: 280px;
+}
+.memories-icon img{
+    height: 160px;
+    width: 200px;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.memories-icon h1{
+    font-size: 15px;
+    color: rgb(254, 125, 125);
+}
+.memories-icon p{
+    text-align: center;
+    font-weight: 400;
+    color: rgb(107, 105, 105);
+    font-size: 15px;
+    max-width: 330px;
+    margin: auto;  
+}
+.brochure{
+    border-radius: 10px;
+    border: 1px solid #cbc8c8; 
+    width: 380px;
+    height: 280px;
+}
+.brochure img{
+    height: 150px;
+    width: 200px;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-bottom: 10px;   
+}
+.brochure h1 a, .memories-icon h1 a{
+    text-decoration: none;
+    font-size: 15px;
+    color: rgb(253, 14, 14);
+    cursor: pointer;
+    position: relative;
+    transition: color 0.7s;    
+}
+.brochure h1 a:hover, .memories-icon h1 a:hover{
+    color: #000;
+}
+
+.brochure h1 a::after, .memories-icon h1 a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 24px;
+    background-color: rgb(245, 44, 44);
+    height: 3px;
+    width: 0;
+    transition: width 0.7s;
+    margin: auto;
+}
+.brochure h1 a:hover::after, .memories-icon h1 a:hover::after{
+    width: 50%;
+}
+
+
+/*-------------------Section 4-----------------------*/
+.section-4{
+    background-image: url(images/Kilimanjaro\ Majesty\ Canvas\ -\ 80\ x\ 80\ cm.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+    background-repeat: no-repeat;
+    width: 100%;
+    z-index: 1;
+    margin-top: 150px;
+    position: relative;
+}
+.section-4 h1{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 900;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+}
+.section-4 p {
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    top: 140px;
+    left: 100px;
+}
+.section-4 button{
+    margin: 200px 200px 30px 250px;
+    padding: 10px 50px;
+    border-radius: 5px;
+    border: 1px solid rgb(254, 125, 125);
+    background-color:  rgb(254, 125, 125);
+    cursor: pointer;
+}
+.section-4 a button {
+    text-decoration: none;
+    color: #fff;
+}
+
+/*---------------------Section 5--------------------*/
+.section-5 {
+    min-height: 80vh;
+    width: 100%;
+    padding: 20px 0;
+}
+.section-5 h1, .section-5 p {
+    text-align: center;
+    margin: 0;
+}
+.section-5 h1 {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 30px;
+    word-spacing: 8px;
+    margin-top: 50px;
+}
+
+.section-5 p {
+    max-width: 70%;
+    margin: 0 auto; 
+    font-size: 16px;
+    word-spacing: 6px;
+    font-weight: 300;
+    color: #5f5f5f;
+    line-height: 1.8;
+}
+.container-3{
+    display: flex;
+    width: 100%;
+    height: 350px;
+    gap: 30px;
+    z-index: 2;
+    margin-top: 100px;
+}
+.container-3 .slider{
+    border-radius: 10px;
+    border: 1px solid #fff;
+    box-shadow: 0 4px 6px  rgba(102, 101, 101, 0.1);
+    background-color: #fff;
+    margin-left: 10px;
+}
+.container-3 .slider img{
+    height: 200px;
+    width: 280px;
+    border-radius: 5px;
+}
+.container-3 .slider p{
+    font-weight: 600;
+    margin-left: 5px;
+    font-size: 13px;
+    color: black;
+}
+.slider .info{
+    margin-top: 15px;
+    color: #545252;
+    display: flex;
+}
+.slider .info #calender{
+    width: 22px;
+    height: 22px;
+}
+.slider .info #location, .slider .info #flag{
+    width: 15px;
+    height: 13px;
+    margin-top: 2px;
+}
+.slider .info p{
+    font-size: 12px;
+    color: #7e7d7d;
+}
+.more-info{
+    margin-top: 10px;
+    position: absolute;
+}
+.info .more-info button{
+    margin: 0 5px 10px 150px;
+    padding: 10px 30px;
+}
+.info .more-info a button{
+    background: linear-gradient(to-right, rgb(245, 104, 104),rgb(202, 105, 121));
+
+}
+.more-info p{
+    position: relative;
+    top: 20px;
+}
+.more-info p span{
+    position: relative;
+    top: 19px;  
+    left: -30px;
+    font-size: 20px;
+    color: #000;
+}
+
+/*------------Section 6----------*/
+.section-6 h1{
+    text-align: center;
+    margin-top: 70px;
+}
+.destinations-1, .destinations-2{
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+    margin-left: 35px;
+}
+.destination-1{
+    background-image: url(images/Serengeti\ National\ Park\,\ Tanzania.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    width: 380px;
+    color: #fff;
+    font-weight: 900;
+    border-radius: 10px;
+    position: relative;
+}
+.destination-2{
+    background-image: url(images/ruaha.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    width: 380px;
+    color: #fff;
+    font-weight: 900;
+    border-radius: 10px;
+    position: relative;
+}
+.destination-3{
+    background-image: url(images/ngorongoro\ \(2\).jpg);
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    width: 380px;
+    color: #fff;
+    font-weight: 900;
+    border-radius: 10px;
+    position: relative;
+}
+.destination-1 p, .destination-2 p, .destination-3 p{
+    position: absolute;
+    top: 180px;
+    left: 10px;
+    font-size: 20px;
+}
+.destination-1 button, .destination-2 button , .destination-3 button{
+    position: absolute;
+    top: 210px;
+    left: 10px;
+    font-size: 15px;  
+    padding: 4px 14px;
+    border-radius: 20px;
+    border: 1px solid #fff;
+    background-color:  rgba(109, 70, 70, 0.567);;
+}
+.destination-btn a{
+    text-decoration: none;
+    color: #fff;
+}
+.destination-btn:hover{
+    background-color: rgb(2, 204, 204);
+    border: 1px solid rgb(2, 204, 204);
+}
+.destination-4{
+    background-image: url(images/Giraffe\ at\ Nyerere\ National\ Park.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    width: 380px;
+    color: #fff;
+    font-weight: 900;
+    border-radius: 10px;
+    position: relative;
+}
+.destination-5{
+    background-image: url(images/Lake\ Manyara.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    width: 380px;
+    color: #fff;
+    font-weight: 900;
+    border-radius: 10px;
+    position: relative;
+}
+.destination-6{
+    background-image: url(images/tembo\ kilimanjaro.jpeg);
+    background-position: re-center;
+    background-size: cover;
+    height: 300px;
+    width: 380px;
+    color: #fff;
+    font-weight: 900;
+    border-radius: 10px;
+    position: relative;
+}
+.destination-4 p, .destination-5 p, .destination-6 p{
+    position: absolute;
+    top: 130px;
+    left: 10px;
+    font-size: 20px;
+}
+.destination-4 button, .destination-5 button, .destination-6 button{
+    position: absolute;
+    top: 160px;
+    left: 10px;
+    color: #fff;
+    font-size: 15px;  
+    padding: 4px 14px;
+    border-radius: 20px;
+    border: 1px solid #fff;
+    background-color:  rgba(109, 70, 70, 0.567);
+}
+
+
+/*-------------Section 7-----------*/
+.section-7{
+    display: flex;
+    gap: 150px;
+    margin-top: 50px;
+}
+.section-7 .text{
+    flex-basis: 40%;
+    margin-top: 40px;
+    margin-left: 30px;
+    flex-direction: column;
+}
+.text h1{
+    margin-top: 40px;
+    font-size: 2rem;
+}
+.text hr{
+    color: #545252;
+    margin-bottom: 20px;
+}
+.text p{
+    padding: 10px 50px;
+    color: #6f6d6d;
+}
+.text p span{
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    padding: 3px 8px;
+    margin-right: 10px;
+}
+div button{
+    margin: 20px;
+    padding: 15px 40px;
+    border-radius: 5px;
+    border: 1px solid rgb(254, 125, 125);
+    background-color:  rgb(254, 125, 125);
+    cursor: pointer;
+}
+div a button {
+    text-decoration: none;
+    color: #fff;
+}
+div a button:hover{
+    color: black;
+}
+.section-7 .image{
+    background-image: url(images/ngorongoro.jpg);
+    flex-basis: 40%;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    width: 60%;
+    border-radius: 15px;
+}
+
+/*------------Section 8--------------*/
+.section-8{
+    background-image: url(images/bird.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: fit-content;
+    margin-top: 30px;
+    color: #fff;
+}
+.section-8 .part-1{
+    display: flex;
+    gap: 60%;
+}
+.section-8 .part-1 img{
+    width: 100px;
+    height: 100px;
+    margin: 30px 40px;
+}
+.section-8 .part-1 .follow-us{
+    display: block;
+    margin-top: 40px;
+}
+.section-8 .part-1 .follow-us .text{
+    margin-top: 20px;
+    margin-left: 55px;
+    color: white;
+    font-size: 13px;
+}
+.section-8 .social-icons{
+    display: flex;
+}
+.section-8 .social-icons .fa{
+    margin-right: 0;
+    margin-top: 20px;
+}
+.section-8 .social-icons a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.section-8 .social-icons a:hover {
+    color: rgb(214, 141, 6); 
+}
+.section-8 hr{
+    color: #2c2b2b;
+    width: 100%;
+    margin-top: 60px;
+    height: 1px;
+}
+.part-2{
+    display: flex;
+    gap: 50px;
+    margin-top: 80px;
+}
+.part-2 .quick-links, .part-2 .experience, .part-2 .support{
+    margin-left: 40px;
+    flex-basis: 15%;
+}
+.part-2 .quick-links li, .part-2 .experience li, .part-2 .support li{
+    list-style: none;
+    margin-top: 20px;
+}
+.part-2 .quick-links li a, .part-2 .experience li a, .part-2 .support li a{
+    text-decoration: none;
+    color: #d2d0d0;
+}
+.part-2 .quick-links li a:hover, .part-2 .experience li a:hover, .part-2 .support li a:hover{
+    color: #fff;
+}
+.part-2 .newsletter {
+    flex-basis: 35%;
+    width: 70%;
+    margin-right: 40px;
+}
+.part-2 .newsletter p{
+    max-width: 90%;
+    margin-top: 30px;
+    line-height: 30px;
+}
+#email-us {
+    display: flex;
+    margin-top: 40px;
+    margin-right: 10px;
+}
+.input-container {
+    position: relative;
+    width: 100%; 
+    max-width: 400px; 
+}
+.input-container input {
+    width: 100%;
+    padding: 22px 70px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    z-index: 1;
+}
+.input-container button {
+    position: absolute;
+    right: 5px; 
+    top: 20%;
+    transform: translateY(-50%);
+    padding: 10px 25px;
+    font-size: 14px; 
+    border: none;
+    background-color: rgb(247, 73, 73);
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+.input-container button:hover {
+    background-color: rgb(200, 50, 50);
+    color: #000;
+}
+.part-3 p{
+    color: #c4c2c2;
+    margin: 30px 30px 0 30px;
+    font-size: 14px;
+}
+.part-3 img{
+    width: 350px;
+    height: 100px;
+    margin: 20px 30px 10px 30px;
+}
+.part-3 .bank-payment{
+    display: flex;
+    gap: 10px;
+}
+.part-3 .bank-payment img{
+    width: 80px;
+    height: 50px; 
+    margin: 0 40px; 
+}
+.part-3 .voda-payment{
+    display: flex;
+    gap: 10px;
+}
+.part-3 .voda-payment img{
+    width: 70px;
+    height: 70px;
+    margin: 15px 40px;    
+}
+.part-3 .bank-payment p{
+    margin-top: 5px;
+}
+.part-3 .bank-payment p, .part-3 .voda-payment p{
+    position: relative;
+    top: 0;
+}
+.part-3 .bank-payment p span, .part-3 .voda-payment span{
+    position: relative;
+    top: 19px;  
+    left: -170px;
+}
+.part-3 .copyright{
+    margin-left: 50%;
+    margin-top: 10px;
+    
+}
+.part-3 .copyright p{
+    color: #6f6d6d;
+}
